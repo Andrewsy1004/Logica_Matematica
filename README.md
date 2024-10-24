@@ -13,3 +13,6 @@ Este proyecto convierte enunciados simples como **"como pizza y chocolate"** en 
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/usuario/proyecto-logica-proposicional.git
+   cd TABLASVERDAD
+   npm install
+   npm start
