@@ -43,7 +43,7 @@ export const TablaLogica = () => {
 
       if (connectors[trimmedPart] && trimmedPart !== 'no' && trimmedPart !== 'ni') {
         if (needParentheses) {
-          expression = `(${expression})`;
+          expression = `( ${expression} )`;
         }
         expression += ` ${connectors[trimmedPart]} `;
         needParentheses = true;
@@ -71,7 +71,7 @@ export const TablaLogica = () => {
         }
 
         if (isNegated) {
-          subExpression = `(${subExpression})`;
+          subExpression = `( ${subExpression} )`;
         }
 
         expression += subExpression;
@@ -79,7 +79,7 @@ export const TablaLogica = () => {
     });
 
     if (needParentheses) {
-      expression = `(${expression})`;
+      expression = `( ${expression} )`;
     }
 
     setPropositions(tempPropositions);

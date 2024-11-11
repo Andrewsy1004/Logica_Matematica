@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Navbar, Introduction, Footer, IntroductionLog, TablaLogica } from './components';
+import { Navbar, Introduction, Footer, IntroductionLog, TablaLogica, Restricciones } from './components';
 import { FaSun, FaMoon } from 'react-icons/fa'; // Importar íconos de React Icons
 
 export const App = () => {
@@ -24,6 +24,11 @@ export const App = () => {
         <div className='container mx-auto px-2 mt-20 mb-20'>
           <IntroductionLog />
         </div>
+
+        {/* Sección de reglas y ejemplos */}        
+        <div className="container mx-auto mb-12">
+           <Restricciones />
+        </div> 
 
         <div className='container mx-auto'>
           <TablaLogica />
