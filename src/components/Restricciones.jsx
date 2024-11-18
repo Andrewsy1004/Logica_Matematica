@@ -57,6 +57,10 @@ export const Restricciones = () => {
                     <span className="text-green-500 mr-3">✔</span>
                     Combina proposiciones simples para crear estructuras complejas. Ejemplo: <em>"si hace frío y está nublado entonces llevo abrigo"</em>.
                 </li>
+                <li className="flex items-start">
+                    <span className="text-green-500 mr-3">✔</span>
+                    Se aceptan algunas reglas de inferencias. Ejemplo: <em>"Modus ponens, Modus tollens, Silogismo Hipotetico y Silogismo Disyuntivo"</em>.
+                </li>
             </ul>
 
             {/* Ejemplos */}
